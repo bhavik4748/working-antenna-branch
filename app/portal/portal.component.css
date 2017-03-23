@@ -1,0 +1,660 @@
+.ps-Header-Build {
+    width: 100px;
+    height: 90px;
+    padding-top: 2px;
+}
+.gradient-blues {
+    background: #44A8DE; /* fallback for old browsers */
+    background: -webkit-linear-gradient(left, #ffffff, #44A8DE, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ffffff, #44A8DE, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.applicationStatusBreadcrumbCotainer {
+    /*display: inline-block;*/
+    margin-top: 12px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+   position: relative;
+    /*height: 75px;*/
+    overflow-x: visible;
+    /*overflow-y: hidden;  - Fix to handle the breadcrumb tab upon zoom-in*/ 
+    white-space: nowrap;
+}
+.inlineBlock {
+    display: inline-block;
+}
+body {
+    line-height: 1;
+    margin: 0;
+    color: #28387c;
+    background-color: white;
+    scrollbar-base-color: #b9b9b9;
+    scrollbar-3dlight-color: black;
+    scrollbar-highlight-color: #C0C0C0;
+    scrollbar-track-color: #EBEBEB;
+    scrollbar-arrow-color: black;
+    scrollbar-shadow-color: #C0C0C0;
+}
+
+@font-face {
+    font-family: 'Bitstream - Monospac821 BT Bold';
+    src: url('../fonts/Bitstream - Monospac821 BT Bold.ttf') format('truetype');
+}
+.segoeUILight {
+    font-family: Gisha;
+    font-weight: 200;
+}
+
+.segoeUISemiLight {
+    font-family: Gisha;
+    font-weight: 300;
+}
+
+.segoeUI {
+    font-family: Gisha;
+    font-weight: 400;
+}
+
+.segoeUISemiBold {
+    font-family: Gisha;
+    font-weight: 600;
+}
+
+.segoeUISemiBoldItalic {
+    font-family: Gisha;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.segoeUIBold {
+    font-family: Gisha;
+    font-weight: 700;
+}
+
+.segoeUIItalic {
+    font-family: Gisha;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.segoeUIBoldItalic {
+    font-family: Gisha;
+    font-style: italic;
+    font-weight: 700;
+}
+
+
+.stagesContainer {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.stageContainer {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;   
+    color: white;
+    cursor: pointer;
+    /*line-height: 13em;*/
+}
+
+    .stageContainer:hover {
+        color: #f69322;
+    }
+
+    .stageContainer:first-child .middleStageContainer .stageTail {
+        display: none;
+        visibility: collapse;
+    }
+    .stageContainer:first-child .middleStageContainer .stageTail-triangle {
+        display: none;
+        visibility: collapse;
+    }
+
+    /*li:first-child .stageContainer .middleStageContainer .stageTail {
+        display: none;
+        visibility: collapse;
+    }*/
+
+
+    .stageContainer:last-child .middleStageContainer .stageHead {
+        display: none;
+        visibility: collapse;
+    }
+    .stageContainer:last-child .middleStageContainer .stageHead-triangle {
+        display: none;
+        visibility: collapse;
+    }
+
+
+/*li:last-child .stageContainer .middleStageContainer .stageHead {
+        display: none;
+        visibility: collapse;
+    }*/
+
+
+.middleStageContainer {
+    display: table;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.stageHead {
+    display: table-cell;
+    width: 11px;
+    height: 39px;
+    /*background-image: url('/Images/Passive/StageHead.png');*/
+    background-image: url('assets/Images/Passive/StageHead_new.png');
+   
+}
+
+.stageHead-triangle{
+    display: table-cell;
+    width: 10px;
+    height: 0;
+    border-style: solid;
+    border-width: 19.5px 0 19.5px 10px;
+    border-color: transparent transparent transparent #7F91BC;
+}
+
+.stageTail {
+    display: table-cell;
+    width: 10px;
+    height: 39px;
+    /*background-image: url('/Images/Passive/StageTail.png');*/
+    background-image: url('assets/Images/Passive/StageTail_new.png');
+}
+
+.stageTail-triangle{
+    display: table-cell;
+    width: 10px;
+    height: 0;
+    background-color: #7F91BC;
+    border-style: solid;
+    border-width: 19.5px 0 19.5px 10px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.stageMiddlePart {
+    display: table-cell;
+    height: 39px;
+    background-color: #7F91BC;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+@media (max-width: 420px) {
+    .stageContainer {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+.textStyle {
+    /*width: 250px;*/
+    height: 51px;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 10px;
+    color: white;
+}
+
+.saveFilingButtonsContainer {
+    margin-left: -15px;
+    margin-top: 4px;
+}
+
+#buttonStyle {
+    display: table;
+    float: left;
+    width: 90px;
+    height: 32px;
+    margin-right: 18px;
+    color: white;
+    background-color: #44A8DE;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+#dashboardButtonStyle {
+    display: table;
+    float: left;
+    width: 110px;
+    height: 32px;
+    margin-right: 18px;
+    color: white;
+    background-color: #44A8DE;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    text-align: center;
+    box-shadow: none;
+    line-height: 2;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 16px;
+}
+
+.buttonStyle {
+    /*display: table;*/
+    /*float: left;*/
+    width: 90px;
+    height: 32px;
+    margin-right: 18px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    color: white;
+    background-color: #44A8DE;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 4px;
+    padding: 6px 10px;
+}
+
+
+#buttonStyle:hover {
+    color: #f69322;
+    text-decoration: none;
+}
+
+.buttonStyle:hover {
+    color: #f69322;
+    text-decoration: none;
+}
+
+
+#buttonText {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+}
+
+.applicationTileContainer {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.applicationStatusTitle {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 27px;
+    color: #28387c;
+}
+
+.propertyProfileBottom {
+    width: 24px;
+    height: 13px;
+    background-image: url('assets/Images/Property Profile Button.png');
+}
+
+    .propertyProfileBottom:hover {
+        background-image: url('assets/Images/Property Profile Button HOver.png');
+    }
+
+.fildPreviewStreet {
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    float: right;
+    max-width: 205px;
+    color: #7f91bc;
+    font-size: 18px;
+    font-style: italic;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+    .fildPreviewStreet:hover {
+        color: #7fb3da;
+    }
+
+
+.applicationStatusBreadcrumbCotainer {
+    /*display: inline-block;*/
+    margin-top: 12px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+   position: relative;
+    /*height: 75px;*/
+    overflow-x: visible;
+    /*overflow-y: hidden;  - Fix to handle the breadcrumb tab upon zoom-in*/ 
+    white-space: nowrap;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+.applicationStatusBreadcrumbItem {
+    display: inline-block;
+    margin-right: -1px;
+}
+
+.applicationStatusBreadcrumbItemBox {
+    display: table;
+    width: 180px;
+    height: 50px;
+    color: white;
+    border: solid 3px transparent;
+}
+
+/*.applicationStatusBreadcrumbItemBox:hover {
+        border: solid 3px #7fb3da;
+    }*/
+
+.applicationStatusBreadcrumbItemName {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+}
+
+.applicationStatusBreadcrumbItemBoxActiveColor {
+    background-color: #28387c;
+}
+
+.applicationStatusBreadcrumbItemBoxPassiveColor {
+    background-color: #6f6f6f;
+}
+
+
+    .tooltip:hover:after {
+        position: absolute;
+        top: -36px;
+        left: 20px;
+        background: white;
+        border: solid;
+        border-color: #969696;
+        border-width: 2px 2px;
+        color: #666666;
+        content: attr(data-tooltip);
+        font-size: 12px;
+        white-space: nowrap;
+        padding: 10px 15px;
+        z-index: 1999998;
+    }
+
+
+.formValueContainer {
+    width: 215px;
+    height: 36px;
+    color: #28387c;
+}
+
+.formFildInput {
+    width: 202px;
+    position: relative;
+    height: 36px;
+    bottom: 0px;
+    margin-right: 0px;
+    border: 1px solid #28387c;
+    padding-left: 10px;
+    background-color: red;
+    color: #28387c;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+}
+
+
+input[type="text"], input[type=password], input[type=email] {
+    width: 100%;
+    position: relative;
+    height: 36px;
+    bottom: 0px;
+    margin-right: 0px;
+    border: 1px solid #28387c;
+    padding-left: 10px;
+    background-color: #f1f1f1;
+    color: #28387c;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+}
+
+textarea {
+    font-size: 14px;
+}
+/*input[type="email"] {
+    width: 215px;
+    position: relative;
+    height: 36px;
+    bottom: 0px;
+    margin-right: 0px;
+    border: 1px solid #28387c;
+    padding-left: 10px;
+    background-color: #f1f1f1;
+    color: #28387c;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+}*/
+
+select {
+    width: 100%;
+    height: 36px;
+    margin-bottom: 20px;
+    border: 1px solid #28387c;
+    padding-left: 10px;
+    background-color: #f1f1f1;
+    color: #28387c;
+    font-size: 14px;
+}
+
+    select::-ms-expand {
+        /*display: none;*/
+        border-color: transparent;
+        background-color: transparent;
+    }
+
+
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-left: 7px;
+    margin-top: 7px;
+    vertical-align: middle;
+    background: #f1f1f1;
+    background-color: #f1f1f1;
+    border: 1px solid #28387c;
+}
+
+    input[type="checkbox"]:focus {
+        outline: 0;
+    }
+
+::-ms-check {
+    color: #28387c;
+    border-color: #f1f1f1;
+    background-color: #f1f1f1;
+    /*padding: 1em;*/
+}
+
+.formFreeFildIText {
+    width: 100%;
+    min-height: 32px;
+    padding-left: 10px;
+    border: 1px solid #28387c;
+    background-color: #f1f1f1;
+    color: #28387c;
+    font-size: 14px;
+    overflow-y: auto;
+}
+
+input[type=checkbox], input[type=radio] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type=radio] {
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+    margin-top: 2px;
+    line-height: normal;
+    background-color: #d4d4d4;
+    padding:5px; 
+}
+
+.optionRadioButton {
+    position: relative;
+    bottom: 7px;
+    margin-left: 5px;
+    font-family: Gisha;
+    font-size: 14px;
+}
+
+/*.col-md-3 {
+    width: 25%;
+    min-width: 202px;
+    height: 50px;
+    margin-bottom: 5px;
+}*/
+
+.height50px {
+    height: 50px;
+}
+
+
+::-webkit-input-placeholder {
+    font-family: Gisha;
+    font-style: italic;
+    font-weight: 400;
+    color: #a1a7c2;
+}
+
+::-moz-placeholder { /* Firefox 18- */
+    font-family: Gisha;
+    font-style: italic;
+    font-weight: 400;
+    color: #a1a7c2;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    font-family: Gisha;
+    font-style: italic;
+    font-weight: 400;
+    color: #a1a7c2;
+}
+
+input:required {
+    outline-width: 1px;
+}
+
+select:required {
+    outline-width: 1px;
+}
+
+input[type="radio"]:focus, input[type="checkbox"]:focus {
+    outline: none;
+}
+
+.active .middleStageContainer .stageTail {
+    /*background-image: url('/Images/StageTail.png');*/
+    background-image: url('assets/Images/StageTail_new.png');
+}
+.active .middleStageContainer .stageTail-triangle{
+    width: 10px;
+    height: 0;
+    background-color: #28387c;
+    border-style: solid;
+    border-width: 19.5px 0 19.5px 10px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.active .middleStageContainer .stageMiddlePart {
+    background-color: #28387c;
+}
+
+.active .middleStageContainer .stageHead {
+    width: 10px;
+    /*background-image: url('/Images/StageHead.png');*/
+    background-image: url('assets/Images/StageHead_new.png');
+}
+
+.active .middleStageContainer .stageHead-triangle{
+    width: 10px;
+    height: 0;
+    border-style: solid;
+    border-width: 19.5px 0 19.5px 10px;
+    border-color: transparent transparent transparent #28387c;
+}
+
+.modernLabel {
+    /*width: 202px;*/
+    height: 32px;
+}
+
+/*.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    width: 202px;
+    height: 32px;
+    min-height: 1px;
+}*/
+
+
+a, a:hover, a:visited {
+    text-decoration: none;
+}
+
+.stageMiddlePart a {
+    color: white;
+    font-family: Gisha;
+    font-weight: 300;
+}
+
+    .stageMiddlePart a:hover {
+        color: #f69322;
+    }
+
+/*.trtemrte > div {
+    height: 50px;
+}*/
+.font-18 {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 1200px){
+    .stageMiddlePart{
+        font-size: 14px;
+    }
+    
+}
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+    .applicationStatusBreadcrumbItemBox{
+            width: 150px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .applicationStatusBreadcrumbItemBox{
+            width: 120px;
+    }
+}

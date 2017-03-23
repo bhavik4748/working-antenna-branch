@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="/">
+    <title>Angular 2 QuickStart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+
+    <script>
+        System.import('app').catch(function (err) { console.error(err); });
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="agency-header col-xs-12 col-sm-12 col-md-12" style="padding: 0;">
+            <div class="upper-header-black">
+                <div class="col-xs-1 col-sm-1 col-md-1"></div>
+                <div class="container col-xs-10 col-sm-10 col-md-10" style="padding-left: 15px;">
+                    <span class="upper-header-left">
+                           <a href="https://www1.nyc.gov">
+                                <img ng-src="assets/images/nyc_white.png" alt="NYC" class="small-nyc-logo">
+                            </a>
+                            <img ng-src="assets/images/upper-header-divider.gif" alt="">
+                            <span class="upper-header-black-title">Buildings</span>
+                    </span>
+                    <span class="upper-header-padding"></span>
+                    <span class="upper-header-right">
+                            <span class="upper-header-three-one-one">
+                                <a href="https://www1.nyc.gov/311/index.page">311</a>
+                            </span>
+                    <img ng-src="assets/images/upper-header-divider.gif" alt="">
+                    <span class="upper-header-search">
+                                <a href="https://www1.nyc.gov/home/search/index.page">Search all NYC.gov websites</a>
+                            </span> &nbsp;
+                    <span style="color: #fff;">Dev-Regular</span>
+                    </span>
+                </div>
+                <div class="col-xs-1 col-sm-1 col-md-1"></div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <div class="col-md-12 pad-none">
+        <app-portal>Loading Portal Component... </app-portal>
+    </div>
+
+    <div class="col-md-12">
+        <footer style="display: none;">
+            <div class="container">
+                <div class="footer-links">
+                    <a href="https://www1.nyc.gov/nyc-resources/agencies.page">Directory of City Agencies </a>
+                    <a href="https://www1.nyc.gov/home/contact-us.page">Contact NYC Government </a>
+                    <a href="https://a127-ess.nyc.gov">City Employees </a>
+                    <a href="https://a858-nycnotify.nyc.gov/notifynyc">Notify NYC </a>
+                    <a href="https://a856-citystore.nyc.gov/">CityStore </a>
+                    <a href="https://www1.nyc.gov/connect/social-media.page">Stay Connected </a>
+                    <a href="https://www1.nyc.gov/connect/applications.page">NYC Mobile Apps  </a>
+                    <a href="https://www1.nyc.gov/nyc-resources/nyc-maps.page">Maps </a>
+                    <a href="https://www1.nyc.gov/nyc-resources/resident-toolkit.page">Resident Toolkit</a>
+                </div>
+                <div class="span3">
+                    <img ng-src="images/nyc_white.png" class="logo-nyc" />
+                    <div class="form-search">
+                        <input placeholder="Search" class="input-search placeholder" ng-model="OpenSearchText" name="search-terms" type="text">
+                        <button class="ico-search" type="button" ng-click="OpenSearch()">Search</button>
+                    </div>
+                    <div class="copyright">
+                        <p>City of New York. 2015 All Rights Reserved,</p>
+                        <p>NYC is a trademark and service mark of the City of New York</p>
+                        <p><a target="_blank" href="https://www1.nyc.gov/home/privacy-policy.page" title="Privacy">Privacy Policy</a>.
+                            <a target="_blank" href="https://www1.nyc.gov/home/terms-of-use.page" title="TOU">Terms of Use</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">&nbsp;</div>
+            <div class="col-xs-10 col-sm-10 col-md-10"></div>
+            <div class="col-xs-2 col-sm-2 col-md-2" style="color:#fff;text-align:left;">Version=1.1</div>
+        </footer>
+    </div>
+</body>
+
+</html>

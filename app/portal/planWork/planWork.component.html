@@ -1,0 +1,59 @@
+<br/> Plan Work Component Here
+
+<div class="col-xs-12 col-sm-12 col-md-12"><strong><span>1. Location Information</span></strong></div>
+<div class="divline col-xs-12 col-sm-12 col-md-12">&nbsp;</div>
+<div class="col-xs-6 col-sm-6 col-md-3 height50px portal-fonts"><span>House No.(s) </span><span class="requiredfield">*</span></div>
+<div class="col-xs-6 col-sm-6 col-md-3 height50px">
+    <input type="text" id="txtPWLocHouseNo" name="txtPWLocHouseNo" maxlength="20" [(ngModel)]='jobFilingObj.HouseNo' />
+</div>
+<div class="col-xs-6 col-sm-6 col-md-3 height50px portal-fonts"> <span>Street Name</span> <span class="requiredfield">*</span></div>
+<div class="col-xs-6 col-sm-6 col-md-3 height50px">
+    <input type="text" id="txtPWLocStreetName" name="txtPWLocStreetName" [(ngModel)]='jobFilingObj.StreetName' />
+</div>
+<div class="col-xs-6 col-sm-6 col-md-3 height50px portal-fonts"><span>Borough</span><span class="requiredfield">*</span></div>
+<div class="col-xs-6 col-sm-6 col-md-3 height50px">
+    <select type="text" id="ddlPWLocBoroughNYC" name="ddlPWLocBoroughNYC" [(ngModel)]='jobFilingObj.BoroughNYC' required>
+                <option value="">select Borough</option>
+                <option value="1">Manhattan</option>
+                <option value="3">Brooklyn</option>
+                <option value="4">Queens</option>
+                <option value="2">Bronx</option>
+                <option value="5">Staten Island</option>
+    </select>
+</div>
+<div class="col-xs-6 col-sm-6 col-md-3 height50px portal-fonts"> <span>Block</span><span class="requiredfield">*</span> </div>
+<div class="col-xs-6 col-sm-6 col-md-3 height50px">
+    <input type="text" id="txtPWLocBlock" name="txtPWLocBlock" [(ngModel)]='jobFilingObj.Block' maxlength="5" required />
+</div>
+<div class="col-xs-6 col-sm-6 col-md-3 height50px portal-fonts"> <span>Lot</span> <span class="requiredfield">*</span></div>
+<div class="col-xs-6 col-sm-6 col-md-3 height50px">
+    <input type="text" id="txtPWLocLot" name="txtPWLocLot" [(ngModel)]='jobFilingObj.Lot' maxlength="10" required />
+</div>
+<div class="col-xs-6 col-sm-6 col-md-3 height50px portal-fonts"> <span>BIN</span><span class="requiredfield">*</span> </div>
+<div class="col-xs-6 col-sm-6 col-md-3 height50px">
+    <input type="text" id="txtPWLocBin" name="txtPWLocBin" [(ngModel)]='jobFilingObj.Bin' style="text-transform: uppercase" disabled
+        required />
+</div>
+<div class="col-xs-6 col-sm-6 col-md-3 height50px portal-fonts"> <span>C.B. No.</span> <span class="requiredfield">*</span></div>
+<div class="col-xs-6 col-sm-6 col-md-3 height50px">
+    <input type="text" id="txtPWLocCBNo" name="txtPWLocCBNo" [(ngModel)]='jobFilingObj.CBNo' disabled required />
+</div>
+<div class="col-xs-6 col-sm-6 col-md-3 height50px portal-fonts"> <span>Zip Code</span><span class="requiredfield">*</span> </div>
+<div class="col-xs-6 col-sm-6 col-md-3 height50px">
+    <input type="text" id="txtPWLocZip" name="txtPWLocZip" [(ngModel)]='jobFilingObj.Zip' disabled />
+</div>
+
+<div class="col-xs-6 col-sm-6 col-md-3 height50px portal-fonts"> <span>Apt./Condo. No.(s)</span> </div>
+<div class="col-xs-6 col-sm-6 col-md-3 height50px">
+    <input type="text" id="txtPWLocAptCondoNo" name="txtPWLocAptCondoNo" [(ngModel)]='jobFilingObj.AptCondonos' maxlength="30"
+    />
+</div>
+
+<div class="col-xs-6 col-sm-6 col-md-3 height50px portal-fonts"> <span>Work on Floor(s)</span><span class="requiredfield">*</span> </div>
+<div class="col-xs-6 col-sm-6 col-md-3 height50px">
+    <input type="text" id="txtPWLocWorkFloor" name="txtPWLocWorkFloor" [(ngModel)]='jobFilingObj.WorkonFloors' maxlength="30"
+        required />
+</div>
+
+
+<div class="col-xs-12 col-sm-12 col-md-12">&nbsp;</div>
